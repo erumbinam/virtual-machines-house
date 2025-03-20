@@ -15,8 +15,8 @@ The shared directories are automatically mounted at /Volumes/My Shared Files/. T
 Shared directories on Linux virtual machines with virtio file system:<br>
 Execute the following command on a terminal in the virtual machine to mount the shared folders of the host machine.<br>
 mount -t virtiofs shared-folder directory<br>
-For example, if you have shared a folder named FF of the host machine, use:<br>
-mount -t virtiofs shared-folder FF<br>
+For example, to mount the shared folders of the host machine on to the /tmp folder of the guest virtual machine, use:<br>
+mount -t virtiofs shared-folder /tmp<br>
 
 Terminology:<br>
 Mac computers:<br>
